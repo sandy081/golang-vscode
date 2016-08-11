@@ -1,5 +1,5 @@
-# https://github.com/ctaggart/golang-vscode
-# https://travis-ci.org/ctaggart/golang-vscode
+# https://github.com/weinand/golang-vscode
+# https://travis-ci.org/weinand/golang-vscode
 
 # Ubuntu Trusty 14.04 with Docker
 # https://docs.travis-ci.com/user/ci-environment/
@@ -19,12 +19,12 @@ env:
 install: true
 
 script:
-  - docker build -t ctaggart/golang-vscode:$VERSION .
+  - docker build -t weinand/golang-vscode:$VERSION .
 
 after_success:
   - if [ ! -z "$TRAVIS_TAG" ]; then
       docker login --email=$DOCKER_HUB_EMAIL --username=$DOCKER_HUB_USERNAME --password=$DOCKER_HUB_PASSWORD;
-      docker push ctaggart/golang-vscode:$VERSION;
-      docker tag -f ctaggart/golang-vscode:$VERSION ctaggart/golang-vscode:latest;
-      docker push ctaggart/golang-vscode:latest;
+      docker push weinand/golang-vscode:$VERSION;
+      docker tag -f weinand/golang-vscode:$VERSION weinand/golang-vscode:latest;
+      docker push weinand/golang-vscode:latest;
     fi

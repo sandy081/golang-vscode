@@ -1,7 +1,7 @@
 syntax_version: "4"
 project_name: golang-vscode
 based_on:
-  docker_image: ctaggart/golang-vscode
+  docker_image: weinand/golang-vscode
 enable_gui: true
 mount:
   main:
@@ -16,7 +16,7 @@ macros:
     usage: start bash
     actions:
     - su - vscode
-    
+
   # macros to open vscode for the dependencies
   gocode:
     usage: open gocode in vscode

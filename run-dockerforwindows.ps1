@@ -11,5 +11,5 @@ $ip = Get-NetIPAddress `
 $cmd="export DISPLAY=${ip}:0; code -w ."
 docker run --rm `
     --security-opt seccomp=unconfined `
-    ctaggart/golang-vscode `
+    weinand/golang-vscode `
     su - vscode -c $cmd

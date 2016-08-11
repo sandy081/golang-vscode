@@ -7,5 +7,5 @@ docker run --rm -it \
     -e DISPLAY=$ip:0 \
     --security-opt seccomp=unconfined \
     -v $HOME/go/nut:/home/vscode/nut \
-    ctaggart/golang-vscode \
+    weinand/golang-vscode \
     su - vscode -c "cd ~/nut; ./vscode.sh"

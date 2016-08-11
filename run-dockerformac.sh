@@ -7,5 +7,5 @@ docker run --rm -it \
     -e DISPLAY=$ip:0 \
     --security-opt seccomp=unconfined \
     -v `pwd`:/home/vscode/golang-gscode \
-    ctaggart/golang-vscode \
+    weinand/golang-vscode \
     su - vscode -c "cd ~/golang-gscode; code -w ."

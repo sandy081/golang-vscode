@@ -1,5 +1,5 @@
-# https://github.com/ctaggart/golang-vscode
-# https://hub.docker.com/r/ctaggart/golang-vscode/
+# https://github.com/weinand/golang-vscode
+# https://hub.docker.com/r/weinand/golang-vscode/
 
 # https://golang.org/
 # https://hub.docker.com/_/golang/
