@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t ctaggart/golang-vscode .
+docker build -t weinand/golang-vscode .
